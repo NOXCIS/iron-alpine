@@ -10,13 +10,13 @@ RUN echo "https://alpine.global.ssl.fastly.net/alpine/v$(cut -d . -f 1,2 < /etc/
 	&& echo "https://alpine.global.ssl.fastly.net/alpine/v$(cut -d . -f 1,2 < /etc/alpine-release)/community" >> /etc/apk/repositories
 
 # The user the app should run as
-ENV APP_USER=app
+ENV APP_USER=tor
 # The home directory
 ENV APP_DIR="/$APP_USER"
 # Where persistent data (volume) should be stored
-ENV DATA_DIR "$APP_DIR/data"
+ENV DATA_DIR="$APP_DIR/data"
 # Where configuration should be stored
-ENV CONF_DIR "$APP_DIR/conf"
+ENV CONF_DIR="$APP_DIR/conf"
 
 # Update base system
 # hadolint ignore=DL3018
