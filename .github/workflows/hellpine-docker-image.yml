@@ -19,7 +19,7 @@ jobs:
       - name: Checkout code from target branch
         uses: actions/checkout@v4
         with:
-          ref: 'refs/heads/main'  # Replace 'target-branch' with your desired branch name
+          ref: 'refs/heads/master'  # Replace 'target-branch' with your desired branch name
 
       # Step 2: Log in to Docker Hub using secrets
       - name: Log in to Docker Hub
