@@ -1,6 +1,6 @@
-FROM alpine:3.20.3
+FROM alpine:latest
 
-LABEL org.opencontainers.image.source="https://github.com/ironpeakservices/iron-alpine"
+LABEL org.opencontainers.image.source="https://github.com/NOXCIS/iron-alpine"
 
 # make a pipe fail on the first failure
 SHELL ["/bin/sh", "-o", "pipefail", "-c"]
